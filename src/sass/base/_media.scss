@@ -15,6 +15,27 @@
             width: 728px;
         }
     }
+    .carousel {
+        padding: 70px 0;       
+        .tns-item {
+            img {
+                margin-bottom: 25px;
+                width: 450px;
+            }
+        }
+        .prev, .next {
+            left: 30px;
+            img {
+                width: 25px;
+                height: 43px;
+            }
+        }
+        .next {
+            left: auto;
+            right: 30px;
+        }
+    
+    }
 }
 @media(max-width: 767px) {
     .consultation {
@@ -93,6 +114,46 @@
         &_left {
             font-size: 23px;
             width: 532px;
+        }
+    }
+    .carousel {
+        padding: 60px 0;
+        .tns-outer {
+            position: relative;
+        }
+        .tns-nav {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);            
+            z-index: 1;
+            button {
+                margin-right: 5px;
+                background-color: #fff;
+                border: 1px solid $main-color;
+                height: 8px;
+                width: 25px;
+                &:focus {
+                    outline: none;
+                }
+                &.tns-nav-active {
+                    background-color: #fff;
+                    border: 1px solid $main-color;
+                    border-radius: 0%;
+                    height: 8px;
+                    width: 25px;
+                    box-shadow: -3px -3px 20px $main-color;
+                }                
+            }
+        }        
+        .tns-item {
+            img {
+                margin-bottom: 25px;
+                width: 450px;
+            }
+        }
+        .prev, .next {
+            display: none;
         }
     }
 }
@@ -191,5 +252,26 @@
                 margin-bottom: 15px;
             }
         }
+    }
+    .carousel {
+        padding: 40px 0;        
+        .tns-nav {            
+            button {                
+                height: 5px;
+                width: 15px;                
+                &.tns-nav-active {                    
+                    height: 5px;
+                    width: 15px;                    
+                }                
+            }
+        }
+        
+        .tns-item {
+            img {
+                margin-bottom: 15px;
+                width: 300px;
+            }
+        }
+
     }
 }
