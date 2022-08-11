@@ -42,15 +42,17 @@ const slider = tns({
     nav: false,
     // autoHeight: true,
     responsive: {
-        320: {
-            nav: true,
-        },
-        576: {
-            nav: true,
-        },
         768: {
             nav: false,
         },
+
+        576: {
+            nav: true,
+        },
+        320: {
+            nav: true,
+        },
+
         // 767: {
         //   gutter: 30,
         // },
