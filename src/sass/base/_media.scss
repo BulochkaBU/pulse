@@ -59,6 +59,18 @@
             }
         }
     }
+    .modal {
+        width: 370px;
+        min-height: 380px;  
+        padding: 35px 35px;
+        .button {
+            &_submit{
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+        
+    }
 
 }
 
@@ -269,31 +281,46 @@
 
     .footer {        
         &__info {
-            padding: 23px 13px 15px 13px;
-            left: 0;
-            transform: none;
-            transform: translateY(50%) ;
-            width: 318px;  
+            padding: 23px 14px 15px 3px;
+            left: 80%;
+            width: 225px;  
             height: 150px;          
         }
         &__address {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 18px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             }
         &__phone {
-            font-size: 15px;
+            font-size: 14px;
             line-height: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 17px;
             }
         &__social-item {
-            margin: 0 8px;
+            margin: 0 5px;
             width: 32px;
             height: 32px;
             img {
                 height: 18px;            
             }
         }        
+    }
+    .modal {
+        width: 350px;
+        min-height: 360px;  
+        padding: 35px 35px;
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__descr {
+            font-size: 13px;
+        }
+        .button {
+            &_submit{
+                height: 40px;
+                font-size: 13px;
+            }
+        }
     }
 
 }
@@ -469,6 +496,57 @@
         &__marathon {
             text-align: center;
         }
-
     }
+    .footer {
+        &__info {
+            left: 0;
+            transform: none;
+            transform: translateY(80%) ;
+            width: 318px;  
+            height: 150px;       
+        }
+        &__address {
+            font-size: 17px;
+            line-height: 20px;
+            margin-bottom: 15px;
+            }
+        &__phone {
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 20px;
+            }
+        
+    }
+
+    .modal {
+        width: 250px;
+        min-height: 310px;  
+        padding: 19px 10px;
+        &__close {
+            right: -30px;
+            font-size: 40px;
+        }
+        &__subtitle {
+            font-size: 13px;
+        }
+        &__descr {
+            font-size: 11px;
+        }
+        .button {
+            &_submit{
+                height: 35px;
+                font-size: 12px;
+            }
+        }
+        .feed-form {
+            margin-top: 36px;
+            width: 220px;
+            margin-top: 20px;
+            input {
+                height: 40px;
+            }
+        }
+    }
+
+
 }
