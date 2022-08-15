@@ -24,7 +24,7 @@
             margin-top: 45px;
         }
         &__tab {
-            width: 180px;
+            width: 170px;
             height: 45px;
             font-size: 16px;
             line-height: 43px;
@@ -33,6 +33,33 @@
             width: 295px;
         }
     }
+    .footer {
+        height: 400px;
+        &__info {
+        padding: 38px 35px 26px 32px;
+        width: 350px;
+        height: 200px;
+        }
+        &__address {
+            font-size: 18px;
+            line-height: 20px;
+            margin-bottom: 25px;
+            }
+        &__phone {
+            font-size: 17px;
+            line-height: 17px;
+            margin-bottom: 28px;
+            }
+        &__social-item {
+            margin: 0 8px;
+            width: 40px;
+            height: 40px;
+            img {
+                height: 22px;            
+            }
+        }
+    }
+
 }
 
 
@@ -64,8 +91,8 @@
     .catalog {
         padding-bottom: 40px;
         &-item {
-            width: 313px;
-            margin: auto 35px;
+            width: 290px;
+            margin: auto auto;
             margin-bottom: 25px;
 
         }
@@ -96,6 +123,12 @@
             line-height: 20px;
         }
     }
+    .footer {        
+        &__info {
+            left: 75%;
+        }        
+    }
+
 }
 @media(max-width: 767px) {
     .consultation {
@@ -232,6 +265,35 @@
         &__text {
             font-size: 13px;
         }
+    }
+
+    .footer {        
+        &__info {
+            padding: 23px 13px 15px 13px;
+            left: 0;
+            transform: none;
+            transform: translateY(50%) ;
+            width: 318px;  
+            height: 150px;          
+        }
+        &__address {
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 15px;
+            }
+        &__phone {
+            font-size: 15px;
+            line-height: 15px;
+            margin-bottom: 20px;
+            }
+        &__social-item {
+            margin: 0 8px;
+            width: 32px;
+            height: 32px;
+            img {
+                height: 18px;            
+            }
+        }        
     }
 
 }
