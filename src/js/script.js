@@ -14,6 +14,7 @@ $(document).ready(function(){
     //           },
     //     ]
     // });
+        
         $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
             $(this)
             .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')
@@ -48,8 +49,28 @@ $(document).ready(function(){
                 $('.overlay, #order').fadeIn('slow');
             });
         });
+
+        $('input[name=phone]').mask('+7 (999) 999-99-99')
+
+        // scroll
+
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 1600) {
+                $('.pageup').fadeIn();
+            } else {
+                $('.pageup').fadeOut();
+            }
+        })
+
+        $("a[href^='#']").click(function(){
+            const _href = $(this).attr("href");
+            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            return false;
+        });
         
 });
+
+
 
 const slider = tns({
     container: '.carousel__inner',
@@ -89,5 +110,7 @@ document.querySelector('.prev').addEventListener('click', function () {
 document.querySelector('.next').addEventListener('click', function () {
     slider.goTo('next');
 })
+
+new WOW().init();
 
 
